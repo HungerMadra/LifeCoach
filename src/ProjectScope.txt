@@ -1,0 +1,43 @@
+Build a Java Personal Assistant That Manages Your Productivity.
+
+* Manage Tasks
+    - Name of Task
+        ~ Task Manager (Parties In Charge of Completing Task)
+        ~ Task Description (Describe Task in Detail)
+        ~ Task Deadline (As Defined by Project Requirement)
+        ~ Task Start Date (Kickoff Date)
+        ~ Estimated Hours to Completion (Estimate )
+        ~ Priority (Color Coded Levels)
+        ~ Set Reminders (What Time Would You Like to Start Task)
+
+    - Color Coded Priority
+        ~ Code Red (This Color Coding Has The Highest Priority)
+        ~ Code Yellow (This Color Has Intermediate Priority)
+        ~ Code Green (This Color Has Low Priority)
+            _ Projects Coded "Red" with The Closest "Deadline" get most visibility(Prompts ??).
+            _ Followed by Coded "Yellow" with The Closest "Deadline"
+            _ Followed by Other Projects Coded "Red" regardless of deadline.
+            _ Followed by Other Projects Coded "Yellow" regardless of deadline.
+            _ Followed by Projects Coded "Green" with The Closest "Deadline"
+
+    - Deadline For Task - For Reminders
+        ~ Get Daily Reminders or Prompts showing.
+            _ Top 3 Code Red Tasks
+            _ Top 2 Code Yellow Tasks
+            _ Top Code Green Task
+
+    - Time You'd Like To Start Task - For Reminders
+        ~ Get Daily Reminders or Prompts showing.
+            _ Tasks You Pre-scheduled For a Certain Start Time
+
+    - Estimated Hours to Completion - For Management
+        ~ Get Daily Reminders or Prompts showing.
+            _ Time Spent On A Project So Far
+            _ How Much Time You Have Left to Work On Project
+
+    - Actual Hours Completed - For Data
+        ~ Get Prompt Showing Productivity (Perhaps As Some Sort Of Percentage ).
+            _ Compare Time Expected vs Actual
+
+    - Completed Tasks Repository - For Data
+        ~ Saved Log Showing all Info and Data Points Specific To A Completed Task

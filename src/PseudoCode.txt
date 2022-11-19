@@ -1,0 +1,26 @@
+Build a Java Personal Assistant That Manages Your Productivity.
+
+    * Attributes of every task
+        Name
+        Description
+        Start Date
+        Deadline
+
+
+    * Task Ranking and Priority
+         Color Code
+         Deadline
+         Expected Hours to Completion
+
+
+    * Reminders
+        Daily Color Code Reminders
+        Daily Scheduled Task Reminders
+        Daily Time Spent Reminder
+        Daily Time Left Reminders
+        Daily Overdue Tasks Reminders
+
+
+    * Productivity Log
+        Time estimated, time spent vs actual - progress bar
+        Completed Log
