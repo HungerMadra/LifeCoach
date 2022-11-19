@@ -5,6 +5,7 @@ Build a Java Personal Assistant That Manages Your Productivity.
         Description
         Start Date
         Deadline
+        Manager
 
 
     * Task Ranking and Priority
