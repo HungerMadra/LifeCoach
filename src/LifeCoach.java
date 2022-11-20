@@ -1,15 +1,16 @@
 import java.time.LocalDate;
 
 public class LifeCoach {
-    String taskManager;
-    String taskDescription;
 
-    String priorityColor;
-    LocalDate startDate;
-    LocalDate deadline;
+    public String taskKey;
+    public String taskMan;
+    public String taskDescription;
+    public String priorityColor;
+    public LocalDate startDate;
+    public LocalDate deadline;
 
-    public LifeCoach(String taskManager, String taskDescription, String priorityColor, LocalDate startDate, LocalDate deadline) {
-        this.taskManager = taskManager;
+    public LifeCoach(String taskMan, String taskDescription, String priorityColor, LocalDate startDate, LocalDate deadline) {
+        this.taskMan = taskMan;
         this.taskDescription = taskDescription;
         this.priorityColor = priorityColor;
         this.startDate = startDate;
@@ -20,13 +21,16 @@ public class LifeCoach {
 
     @Override
     public String toString() {
-        return "LifeCoach{" +
-                "taskManager='" + taskManager + '\'' +
-                ", taskDescription='" + taskDescription + '\'' +
-                ", priorityColor='" + priorityColor + '\'' +
-                ", startDate=" + startDate +
-                ", deadline=" + deadline +
-                '}';
+        return  "Task Manager: " + taskMan +
+                ", Task Description: " + taskDescription +
+                ", Priority: " + priorityColor +
+                ", Start Date: " + startDate +
+                ", Deadline: " + deadline;
+    }
+
+
+    public void print(){
+        System.out.println(taskMan + " " + taskDescription + " " + startDate + " " + deadline);
     }
 }
 

@@ -9,12 +9,23 @@ Build a Java Personal Assistant That Manages Your Productivity.
 
 
     * Task Ranking and Priority
+
+            This is how we manage task and their priorities. We will be using Hashmaps to present this data.
+            Task Key - Life Coach object values
+
+
          Color Code
          Deadline
          Expected Hours to Completion
 
 
     * Reminders
+
+            We are going to write methods to manage reminders and logs.
+
+            First method will be a method to createTasks - It must be serializable.
+
+
         Daily Color Code Reminders
         Daily Scheduled Task Reminders
         Daily Time Spent Reminder
