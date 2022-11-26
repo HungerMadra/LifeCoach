@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Scanner;
-public class taskManager {
+public class taskManager{
 
     // Create HashMap object with LifeCoach object Values
     HashMap<String, LifeCoach> tasks = new HashMap<>();
@@ -34,14 +34,14 @@ public class taskManager {
 // Start Creating Task Using Prompts
         System.out.println("Lets Create a New Task !");
         System.out.println("Please Enter Unique Task keyID");
-        String key = myScanner.nextLine();
+        String taskKey = myScanner.nextLine();
 
 // Loop to ensure that Task Key is always unique
         for (String keyID : tasks.keySet()) {
             if (tasks.keySet().contains(keyID)) {
                 System.out.println("This keyID Is Already In Use");
                 System.out.println("Please Enter Unique Task keyID");
-                key = myScanner.nextLine();
+                taskKey = myScanner.nextLine();
             }
         }
 
@@ -74,7 +74,7 @@ public class taskManager {
         LifeCoach tempTask = new LifeCoach(taskMan,taskDescription,priorityColor,startDate,deadline);
 
 // Store the information in a HashMap
-        tasks.put(key,tempTask);
+        tasks.put(taskKey,tempTask);
 
 // reinitialize loop with prompts
             System.out.println("Would You Like To Create A New Task");
@@ -85,8 +85,10 @@ public class taskManager {
 
 // print task
         System.out.println(tasks.keySet() + " " + tasks.values().toString());
+        Serializer.serializeHashMap(tasks);
 
 }
 
+//Create Flow for Reminders/Logs That are Called Once App is Opened
 
 }

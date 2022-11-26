@@ -1,6 +1,7 @@
 import java.time.LocalDate;
+import java.io.Serializable;
 
-public class LifeCoach {
+public class LifeCoach implements Serializable {
 
     public String taskKey;
     public String taskMan;
