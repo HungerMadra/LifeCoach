@@ -22,7 +22,6 @@ Build a Java Personal Assistant That Manages Your Productivity.
     * Reminders
 
             We are going to write methods to manage reminders and logs.
-
             First method will be a method to createTasks - It must be serializable.
 
 
@@ -34,5 +33,10 @@ Build a Java Personal Assistant That Manages Your Productivity.
 
 
     * Productivity Log
+
+            Productivity log to should track a lot of things, Work, Play(hobbies), Rest, Social (Friends and Fam),
+            Prompt to start new personal project (Give time break down available), Motivate
+
+
         Time estimated, time spent vs actual - progress bar
         Completed Log

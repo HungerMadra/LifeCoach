@@ -14,12 +14,12 @@ public class taskManager{
 
 // While loop for task creation
         System.out.println("Would You Like To Create A New Task");
-        System.out.println("Answer \"Yes\" or \"No\"");
+        System.out.println("Answer Yes or No");
         String response = myScanner.nextLine();
 
 // Catch non Yes or No responses
         while (!response.equalsIgnoreCase("Yes") && !response.equalsIgnoreCase("No")){
-            System.out.println("Answer \"Yes\" or \"No\"");
+            System.out.println("Answer Yes or No");
             response = myScanner.nextLine();
         }
 
@@ -30,6 +30,7 @@ public class taskManager{
 
 // Initializing while loop
         while (response.equalsIgnoreCase("Yes")) {
+            Scanner myScanner = new Scanner(System.in);
 
 // Start Creating Task Using Prompts
         System.out.println("Lets Create a New Task !");
@@ -37,13 +38,11 @@ public class taskManager{
         String taskKey = myScanner.nextLine();
 
 // Loop to ensure that Task Key is always unique
-        for (String keyID : tasks.keySet()) {
-            if (tasks.keySet().contains(keyID)) {
-                System.out.println("This keyID Is Already In Use");
-                System.out.println("Please Enter Unique Task keyID");
+            while (tasks.containsKey(taskKey)) {
+                System.out.println("keyID " + taskKey + " is already in use");
+                System.out.println("Please Enter A Unique Task keyID");
                 taskKey = myScanner.nextLine();
             }
-        }
 
 // Create task Details
         System.out.println("Who Is In Charge Of Managing This Task");
@@ -52,6 +51,12 @@ public class taskManager{
         String taskDescription = myScanner.nextLine();
         System.out.println("Please Enter Task Priority Color Code");
         String priorityColor = myScanner.nextLine();
+// Loop to make sure color codes are red, yellow or green
+            while (!priorityColor.equalsIgnoreCase("Red") && !priorityColor.equalsIgnoreCase("Yellow")
+                    && !priorityColor.equalsIgnoreCase("Green")){
+                System.out.println("Please Choose between - Red, Yellow and Green");
+                priorityColor = myScanner.nextLine();
+            }
         System.out.println("Please Enter Task Start Date");
         System.out.println("Use Date Format: YYYY-MM-DD ");
         LocalDate startDate = LocalDate.parse(myScanner.next());
@@ -78,8 +83,7 @@ public class taskManager{
 
 // reinitialize loop with prompts
             System.out.println("Would You Like To Create A New Task");
-            System.out.println("Answer " + "/n Yes" + "/n Or " + "/n No");
-            Scanner myScanner = new Scanner(System.in);
+            System.out.println("Answer Yes or No");
             response = myScanner.next();
     }
 
