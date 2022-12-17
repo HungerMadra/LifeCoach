@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4c5d71-978d-46d1-bc99-f025bff97760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/._jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/._workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskHashMap.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PseudoCode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PseudoCode.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/taskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/taskManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
